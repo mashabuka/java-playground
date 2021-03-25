@@ -80,7 +80,7 @@ public final class DepthFirstSearch<E extends Edge<T>, T extends Comparable<T>> 
     preOrderVisitFunction.accept(u);
 
     List<Node<T>> neighbors = getNeighbors(u);
-    LOGGER.debug("Visiting neighbors of {}: {}", u, neighbors);
+    LOGGER.debug("Visiting neighbors of {} that have not been discovered: {}", u, neighbors);
     for (Node<T> v : neighbors) {
       if (discovered.contains(v)) {
         continue;

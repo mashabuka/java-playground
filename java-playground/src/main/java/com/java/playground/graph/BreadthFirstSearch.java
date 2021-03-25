@@ -53,11 +53,7 @@ public final class BreadthFirstSearch<E extends Edge<T>, T extends Comparable<T>
       Graph<E, T> graph,
       Node<T> root) {
     List<Node<T>> ordered = new LinkedList<>();
-    Consumer<Node<T>> visitFunction = ordered::add;
-
-    BreadthFirstSearch<E, T> bfs = new BreadthFirstSearch<>(graph);
-    bfs.execute(root, visitFunction);
-
+    execute(graph, root, ordered::add);
     return ImmutableList.copyOf(ordered);
   }
 
@@ -74,11 +70,15 @@ public final class BreadthFirstSearch<E extends Edge<T>, T extends Comparable<T>
       Node<T> u = queue.remove();
 
       // Enqueue all of the frontier nodes for this node; they will be visited before descending one level lower.
-      for (Node<T> v : getNeighbors(u)) {
+      List<Node<T>> neighbors = getNeighbors(u);
+      LOGGER.debug("Enqueuing neighbors of {} that have not been discovered: {}", u, neighbors);
+      for (Node<T> v : neighbors) {
         if (discovered.contains(v)) {
           continue;
         }
 
+        // In contrast to depth-first search, we merely enqueue the node and move on to the next without descending
+        // down a level recursively to traverse this node.
         LOGGER.info("Visiting node: {}", v);
         visitFunction.accept(v);
         discovered.add(v);
