@@ -3,4 +3,5 @@
     "-//Checkstyle//DTD Supressions 1.2//EN"
     "https://checkstyle.org/dtds/suppressions_1_2.dtd">
 <suppressions>
+  <suppress checks="." files="com[\\/]java[\\/]playground[\\/]hackerrank"/>
 </suppressions>
