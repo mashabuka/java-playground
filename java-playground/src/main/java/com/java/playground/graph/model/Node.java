@@ -54,8 +54,8 @@ public final class Node<T extends Comparable<T>> {
     }
 
     Node<?> that = (Node<?>) obj;
-    return id.equals(that.id)
-        && value.equals(that.value);
+    return Objects.equals(this.id, that.id)
+        && Objects.equals(this.value, that.value);
   }
 
   @Override
