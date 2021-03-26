@@ -18,6 +18,7 @@ public final class PowerSet<T> {
 
   public Set<Set<T>> generate(Set<T> xs) {
     if (xs.isEmpty()) {
+      LOGGER.info("The power set of {} is: {}", xs, ImmutableSet.of());
       return ImmutableSet.of(ImmutableSet.of());
     }
 
@@ -27,7 +28,7 @@ public final class PowerSet<T> {
 
     // Generate all subsets without x, then add e to each of them.
     Set<Set<T>> without = generate(rest);
-    Set<Set<T>> with = addElement(x, without);
+    Set<Set<T>> with = addElement(without, x);
 
     // The subsets without x and the subsets with x added will give you the power set.
     Set<Set<T>> result = ImmutableSet.<Set<T>>builder()
@@ -43,11 +44,11 @@ public final class PowerSet<T> {
     return ImmutableSet.copyOf(rest);
   }
 
-  private Set<Set<T>> addElement(T e, Set<Set<T>> without) {
+  private Set<Set<T>> addElement(Set<Set<T>> without, T x) {
     return without.stream()
         .map(xs -> ImmutableSet.<T>builder()
             .addAll(xs)
-            .add(e)
+            .add(x)
             .build())
         .collect(ImmutableSet.toImmutableSet());
   }
