@@ -11,12 +11,12 @@ import org.slf4j.LoggerFactory;
 
 
 /**
- * <p>Generates unique permutations of a list of elements.</p>
+ * <p>Generates permutations of a list of distinct elements.</p>
  *
  * @see <a href="https://en.wikipedia.org/wiki/Permutation">Permutation</a>
  */
-public final class UniquePermutations<T> {
-  private static final Logger LOGGER = LoggerFactory.getLogger(UniquePermutations.class);
+public final class Permutations<T> {
+  private static final Logger LOGGER = LoggerFactory.getLogger(Permutations.class);
 
   public Set<List<T>> generate(List<T> xs) {
     if (xs.isEmpty()) {

@@ -9,10 +9,10 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public final class UniquePermutationsTest {
+public final class PermutationsTest {
   @Test
   public void testPermutations() {
-    UniquePermutations<Character> permutations = new UniquePermutations<>();
+    Permutations<Character> permutations = new Permutations<>();
     Set<List<Character>> xs = permutations.generate(ImmutableList.of('a', 'b', 'c'));
 
     assertThat(xs).containsExactlyInAnyOrder(
