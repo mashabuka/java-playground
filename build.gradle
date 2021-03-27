@@ -38,6 +38,7 @@ ext {
       'assertj-core': 'org.assertj:assertj-core:3.12.0',
       'auto-value': 'com.google.auto.value:auto-value:1.6.3',
       'auto-value-annotations': 'com.google.auto.value:auto-value-annotations:1.6.3',
+      'findbugs-annotations': 'com.google.code.findbugs:findbugs-annotations:3.0.1',
       'guava': 'com.google.guava:guava:28.2-jre',
       'icu4j': 'com.ibm.icu:icu4j:67.1',
       'junit-jupiter-api': 'org.junit.jupiter:junit-jupiter-api:5.7.1',

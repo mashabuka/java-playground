@@ -10,6 +10,7 @@ dependencies {
 
   implementation rootProject.ext.dependencies.'apiguardian-api'
   implementation rootProject.ext.dependencies.'auto-value-annotations'
+  implementation rootProject.ext.dependencies.'findbugs-annotations'
   implementation rootProject.ext.dependencies.'guava'
   implementation rootProject.ext.dependencies.'icu4j'
   implementation rootProject.ext.dependencies.'slf4j-api'
