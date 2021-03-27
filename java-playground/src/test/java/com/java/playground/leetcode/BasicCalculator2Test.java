@@ -1,4 +1,4 @@
-package com.retiman.interview.leetcode;
+package com.java.playground.leetcode;
 
 import java.util.stream.Stream;
 
@@ -27,6 +27,7 @@ public final class BasicCalculator2Test {
   @ParameterizedTest
   @MethodSource("argumentsProvider")
   public void testCalculate(String input, int expected) {
-    assertThat(solution.calculate(input)).isEqualTo(expected);
+    int actual = solution.calculate(input);
+    assertThat(actual).isEqualTo(expected);
   }
 }

@@ -1,9 +1,11 @@
 package com.java.playground.hackerrank;
 
 /**
+ * <p>
  * Solves the problem of checking if an input is a binary search tree.  A binary search tree's nodes satisfies the
  * property that all values in the left subtree are less than the node's value, and all values in the right subtree are
  * greater than the node's value.  By this definition, no duplicates are allowed.
+ * </p>
  *
  * @see <a href="https://www.hackerrank.com/challenges/is-binary-search-tree/problem">Is this a binary search tree?</a>
  * @see <a href="https://en.wikipedia.org/wiki/Binary_search_tree">Binary search tree</a>

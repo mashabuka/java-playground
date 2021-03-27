@@ -5,10 +5,12 @@ import java.util.List;
 
 
 /**
+ * <p>
  * The problem is to print out the node values by level.  That is, all nodes from left to right in the first depth
  * level, then second depth level, and so on.  This can be done a variety of ways including keep a map of level to
  * list of nodes and then print them out.  However, this is effectively the same as a breadth-first search, so it is
  * implemented here as such.
+ * </p>
  *
  * <a href="https://www.hackerrank.com/challenges/tree-level-order-traversal/problem">Level order traversal</a>
  * <a href="https://en.wikipedia.org/wiki/Breadth-first_search">Breadth-first search</a>

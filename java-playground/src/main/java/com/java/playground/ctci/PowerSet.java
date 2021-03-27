@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 
 
 /**
- * Generates all subsets of a set.
+ * <p>Generates all subsets of a set.</p>
  *
  * @see <a href="https://en.wikipedia.org/wiki/Power_set">Power set</a>
  */

@@ -10,6 +10,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
+/**
+ * <p>Generates unique permutations of a list of elements.</p>
+ *
+ * @see <a href="https://en.wikipedia.org/wiki/Permutation">Permutation</a>
+ */
 public final class UniquePermutations<T> {
   private static final Logger LOGGER = LoggerFactory.getLogger(UniquePermutations.class);
 

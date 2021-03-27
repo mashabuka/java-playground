@@ -1,11 +1,16 @@
-package com.retiman.interview.leetcode;
+package com.java.playground.leetcode;
 
 import java.util.Stack;
 
 
-// Must support +-*/ but no parentheses.  Integer division truncates to 0.
-//
-// https://leetcode.com/problems/basic-calculator-ii/
+/**
+ * <p>
+ * Unlike {@code BasicCalculator1}, this must support all four basic arithmetic operations, but not parentheses.  Assume
+ * that integer division truncates to zero.
+ * </p>
+ *
+ * @see <a href="https://leetcode.com/problems/basic-calculator-ii/">Basic calculator 2</a>
+ */
 public final class BasicCalculator2 {
   public int calculate(String s) {
     if (s == null || s.isEmpty()) {

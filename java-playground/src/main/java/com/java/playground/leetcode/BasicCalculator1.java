@@ -4,9 +4,11 @@ import java.util.Stack;
 
 
 /**
+ * <p>
  * The basic calculator must calculate addition and subtraction (not multiplication and division), but support
  * parentheses.  Because of this, all operations have the same precedence (unless parentheses are used).  The input
  * string may contain spaces.
+ * </p>
  *
  * @see <a href="https://leetcode.com/problems/basic-calculator/">Basic calculator</a>
  */
