@@ -1,4 +1,4 @@
-package com.java.playground.leetcode;
+package com.java.playground.leetcode.medium;
 
 import java.util.List;
 
